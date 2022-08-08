@@ -1,0 +1,17 @@
+{
+    "id": "nowpayments",
+    "name": "NowPayments",
+    "description": "Start accepting crypto payments NOW",
+    "version": "1.0.0",
+    "url": "https://azuriom.com",
+    "authors": [
+        "Javdu10"
+    ],
+    "azuriom_api": "1.0.0",
+    "providers": [
+        "\\Azuriom\\Plugin\\NowPayments\\Providers\\NowPaymentsServiceProvider"
+    ],
+    "dependencies" : {
+        "shop" : "^1.0.0"
+    }
+}
