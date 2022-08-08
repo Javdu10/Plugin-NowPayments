@@ -65,7 +65,12 @@ class NowPaymentsMethod extends PaymentMethod
 
     public function success(Request $request)
     {
-        return view('shop::payments.success');
+        return redirect()->route('shop.home')->with('success', trans('messages.status.success'));
+    }
+
+    public function failure(Request $request)
+    {
+        return redirect()->route('shop.home')->with('error', trans('messages.status.error'));
     }
 
     public function rules()
